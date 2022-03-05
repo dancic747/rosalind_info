@@ -16,15 +16,11 @@ def patterns_forming_clumps(k,L,t,text):
 
 
 if __name__=='__main__':
-    # with open('C:/Users/Doris/Downloads/rosalind_ba1e.txt','r') as f:
-    #     text=f.readline().strip()
-    #     num_params=f.readline().strip()
-    #     k=num_params.split(' ')[0]
-    #     L=num_params.split(' ')[1]
-    #     t=num_params.split(' ')[2]
-    text='CGGACTCGACAGATGTGAAGAAATGTGAAGACTGAGTGAAGAGAAGAGGAAACACGACACGACATTGCGACATAATGTACGAATGTAATGTGCCTATGGC'
-    k=5
-    L=75
-    t=4
+    with open('C:/Users/Doris/Downloads/rosalind_ba1e.txt','r') as f:
+         text=f.readline().strip()
+         num_params=f.readline().strip()
+         k=int(num_params.split(' ')[0])
+         L=int(num_params.split(' ')[1])
+         t=int(num_params.split(' ')[2])
     patterns_forming_clumps_list=patterns_forming_clumps(k,L,t,text)
-    print(*sorted(patterns_forming_clumps_list), ' ')
+    print(*(patterns_forming_clumps_list), ' ')
