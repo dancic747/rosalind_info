@@ -12,9 +12,6 @@ def patterns_forming_clumps(k,L,t,text):
     return patterns_forming_clumps_list
 
 
-
-
-
 if __name__=='__main__':
     with open('C:/Users/Doris/Downloads/rosalind_ba1e.txt','r') as f:
          text=f.readline().strip()
@@ -24,3 +21,5 @@ if __name__=='__main__':
          t=int(num_params.split(' ')[2])
     patterns_forming_clumps_list=patterns_forming_clumps(k,L,t,text)
     print(*(patterns_forming_clumps_list), ' ')
+
+    
