@@ -6,7 +6,7 @@ def find_and_count_kmers(text, k):
     kmer_dictionary={}
     for i in range(len(text)-k+1):
         if text[i:i+k] not in kmer_dictionary:
-            kmer_dictionary[text[i:i+k]]=0
+            kmer_dictionary[text[i:i+k]]=1
         else:
             kmer_dictionary[text[i:i+k]]+=1
     return kmer_dictionary
