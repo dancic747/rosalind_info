@@ -16,3 +16,4 @@ if __name__=='__main__':
     with open("C:/Users/Doris/Downloads/rosalind_ba1c.txt", "r") as f:
        text = f.readline().strip()
     print(complement(text))
+
