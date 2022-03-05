@@ -13,11 +13,11 @@ def find_and_count_kmers(text, k):
 
 
 if __name__=="__main__":
-    #with open("C:/Users/Doris/Downloads/rosalind_ba1b.txt", "r") as f:
-     #   text = f.readline().strip()
-      #  k = int(f.readline().strip())
+    with open("C:/Users/Doris/Downloads/rosalind_ba1b.txt", "r") as f:
+        text = f.readline().strip()
+        k = int(f.readline().strip())
     
-    dict=find_and_count_kmers('CGATATATCCATAG', 3)
+    dict=find_and_count_kmers(text, k)
     max_value_key_list=[]
     max_value=max(dict.values())
     for key in dict:
