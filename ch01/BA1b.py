@@ -24,4 +24,3 @@ if __name__=="__main__":
         if dict[key]==max_value: max_value_key_list.append(key)
     print(*sorted(max_value_key_list), ' ')
 
-    
