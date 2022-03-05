@@ -16,3 +16,4 @@ if __name__=='__main__':
         text=f.readline().strip()
     positions=position(text, pattern)
     print(*positions, ' ')
+
