@@ -29,4 +29,4 @@ if __name__=="__main__":
     sorted_values=[]
     for key in sorted(list(dict.keys())):
         sorted_values.append(dict[key])
-    print(*sorted_values,' ')
+    print(*sorted_values,' ', file=open('output.txt','w'))
