@@ -4,9 +4,11 @@
 def last_symbol(text):
   return text[-1]
 
+
 def text_prefix(text):
   text=text[:len(text)-1]
   return text
+
 
 def symbol_to_number(symbol):
   if symbol=='A': number=0
@@ -14,6 +16,7 @@ def symbol_to_number(symbol):
   elif symbol=='G': number=2
   else: number=3
   return number
+
 
 def pattern_to_number(pattern):
   if len(pattern)==0: return 0
