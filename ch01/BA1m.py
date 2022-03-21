@@ -1,5 +1,5 @@
 #BA1M
-#
+#Implement NumberToPattern
 
 def number_to_symbol(num):
   if num==0: symbol='A'
