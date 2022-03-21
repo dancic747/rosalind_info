@@ -21,12 +21,12 @@ def compute_hamming_distance(text1,text2):
 
 
 def generate_d_neighbourhood(text,d):
-  dict=make_dict(len(text))
-  d_neighbourhood=[]
-  for key in dict:
-    if compute_hamming_distance(text,key)<=d and key not in d_neighbourhood:
-      d_neighbourhood.append(key)
-  return d_neighbourhood
+    dict=make_dict(len(text))
+    d_neighbourhood=[]
+    for key in dict:
+        if compute_hamming_distance(text,key)<=d and key not in d_neighbourhood:
+            d_neighbourhood.append(key)
+    return d_neighbourhood
 
 
 #BA1n
