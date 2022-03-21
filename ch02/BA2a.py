@@ -20,26 +20,10 @@ def compute_hamming_distance(text1,text2):
     return mismatches
 
 
-def generate_d_neighbourhood(text,d):
-    dict=make_dict(len(text))
-    d_neighbourhood=[]
-    for key in dict:
-        if compute_hamming_distance(text,key)<=d and key not in d_neighbourhood:
-            d_neighbourhood.append(key)
-    return d_neighbourhood
-
-
 #BA1n
 def motifEnumeration(dna_list,k,d):
     patterns=[]
-    patterns2=[]
-    for dna in dna_list:
-        for i in range(len(dna)-k+1):
-            l=generate_d_neighbourhood(dna[i:i+k],d)
-        for j in range(len(l)):
-            if l[j] not in patterns2: 
-                patterns2.append(l[j])
-    
+    patterns2=list(make_dict(k).keys())
     for pat in patterns2:
         count=0
         for i in range(len(dna_list)):
