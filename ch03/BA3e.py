@@ -1,5 +1,5 @@
 #BA3E
-#
+#Construct the De Bruijn Graph of a Collection of k-mers
 
 def deBruijn(patterns):
     dictionary={}
